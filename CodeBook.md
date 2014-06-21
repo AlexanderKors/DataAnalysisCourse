@@ -5,8 +5,8 @@ Setting working directory
 
 Obtaining features names
 
-<pre><code>features<-read.table("features.txt")</code></pre>
-        <pre><code>colnames(features)<-c("ID","Name")</code></pre>
+features <-read.table("features.txt")
+colnames(features)<-c("ID","Name")
 
 <pre><code>namesvec<-as.character(features$Name)</code></pre>
 
