@@ -7,18 +7,12 @@ Obtaining features names
 
     features <-read.table("features.txt")
     colnames(features)<-c("ID","Name")
+    namesvec<-as.character(features$Name)
+    library(data.table)
+    library(plyr)
+    library(reshape2)
 
-<pre><code>namesvec<-as.character(features$Name)</code></pre>
-
-
-<pre><code>library(data.table)</code></pre>
-
-<pre><code>library(plyr)</code></pre>
-
-<pre><code>library(reshape2)
-</code></pre>
-
-## Read-in a data frame activities performed by train and test groups
+Read-in a data frame activities performed by train and test groups
 
 <pre><code>activity_test<-read.table("TEST/y_test.txt")
 activity_train<-read.table("train/y_train.txt")
