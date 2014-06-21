@@ -4,14 +4,14 @@ Setting working directory
 </code></pre>
 
 Obtaining features names
+<pre><code>
+           features<-read.table("features.txt")
+           colnames(features)<-c("ID","Name")
+           namesvec<-as.character(features$Name)
 
-<pre><code>features<-read.table("features.txt")
-       colnames(features)<-c("ID","Name")
-       namesvec<-as.character(features$Name)
-
-       library(data.table)
-       library(plyr)
-       library(reshape2)
+           library(data.table)
+           library(plyr)
+           library(reshape2)
 </code></pre>
 
 ## Read-in a data frame activities performed by train and test groups
